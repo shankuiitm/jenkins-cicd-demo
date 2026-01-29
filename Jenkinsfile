@@ -2,13 +2,6 @@ pipeline {
     agent { label 'linux-agent' }
 
     stages {
-
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/YOUR_USERNAME/jenkins-cicd-demo.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh '''
